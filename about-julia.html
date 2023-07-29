@@ -355,7 +355,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="about-julia">
 <h1>About Julia<a class="headerlink" href="#about-julia" title="Permalink to this heading">#</a></h1>
 <p>Before hopping into some numerical methods and running benchmarks, I thought it would be smart to show off some functionality of Julia so that people can see why (in my humble opinion) Julia is a far superior programming language to MATLAB.</p>
-<p>First off, Julia as INCREDIBLY similar syntax to MATLAB. If statements, for loops, functions, creating a matrix, etc. are all the same in MATLAB as they are in Julia. For example, here is an example of a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop in Julia:</p>
+<p>First off, Julia has INCREDIBLY similar syntax to MATLAB. If statements, for loops, functions, creating a matrix, etc. are all the same in Julia as they are in MATLAB. For example, here is an example of a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop in Julia:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="mi">10</span>
@@ -416,8 +416,8 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2-element Vector{Float64}:
- 0.8840788211012851
- 0.9818161772348335
+ 0.7448783127630104
+ 0.9291847457013701
 </pre></div>
 </div>
 </div>
@@ -431,14 +431,14 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2-element Vector{Float64}:
- 4.420394105506426
- 4.909080886174167
+ 3.724391563815052
+ 4.64592372850685
 </pre></div>
 </div>
 </div>
 </div>
-<p>Julia also uses 1-based indexing (unlike C, Java, Python, etc.) which is additionally similar to MATLAB. However, there are some notable differences that need to be made between MATLAB and Julia. You can read up on all these differences <a class="reference external" href="https://docs.julialang.org/en/v1/manual/noteworthy-differences/">here</a>, but I am going to list the bigger ones here.</p>
-<p>For starters, <em>indexing is done with square brackets and not parentheses</em>. So to access an element in <code class="docutils literal notranslate"><span class="pre">A</span></code>, we would need to write:</p>
+<p>Julia also uses 1-based indexing (unlike C, Java, Python, etc.) which is additionally similar to MATLAB. However, there are some notable differences that need to be made between MATLAB and Julia. You can read up on all these differences <a class="reference external" href="https://docs.julialang.org/en/v1/manual/noteworthy-differences/">here</a>, but I am going to list the bigger ones in this chapter.</p>
+<p>For starters, <em>indexing is done with square brackets and not parentheses</em>. To access an element in <code class="docutils literal notranslate"><span class="pre">A</span></code>, we would need to write:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
